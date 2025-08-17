@@ -28,7 +28,7 @@ import React from "react";
     const newStatusRank = STATUS_RANKS[status];
 
     if (newStatusRank < currentStatusRank) {
-      statusObj[letter] = status;
+      obj[letter] = status;
     }
   });
 

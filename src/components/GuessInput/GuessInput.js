@@ -1,7 +1,7 @@
 import { format } from "prettier";
 import React from "react";
 
-function GuessInput({handleSubmitGuess}) {
+function GuessInput({handleSubmitGuess, gameStatus}) {
   const [guess, SetGuess] = React.useState("");
 
   function getGuess(event) {
@@ -16,7 +16,8 @@ function GuessInput({handleSubmitGuess}) {
       <label htmlFor="guess-input">Enter guess:</label>
       <input
         required
-          minLength={5}
+        disabled={gameStatus !== "running"}
+        minLength={5}
         maxLength={5}
         pattern="[a-zA-Z]{5}"
         title="5 letter word"

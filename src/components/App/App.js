@@ -1,5 +1,6 @@
 import Game from '../Game';
 import Header from '../Header';
+import Footer from '../Footer';
 
 function App() {
   return (
@@ -8,7 +9,9 @@ function App() {
 
       <div className="game-wrapper">
         <Game />
+        
       </div>
+      <Footer />
     </div>
   );
 }

@@ -2,8 +2,9 @@ import React from 'react';
 
 function Header() {
   return (
-    <header>
-      <h1>Word Game</h1>
+    <header className="main-header">
+      <h1>Stamfordle</h1>
+      <h3>Chelsea Inspired Word Game</h3>
     </header>
   );
 }

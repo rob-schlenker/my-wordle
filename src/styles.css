@@ -5,7 +5,7 @@ html {
   overflow-y: scroll;
 
   --game-spacing: 32px;
-  --header-height: 4rem;
+  /* --header-height: 4rem; */
 
   --color-success: hsl(150deg 70% 30%);
   --color-warning: hsl(50deg 100% 30%);
@@ -15,13 +15,15 @@ html {
   --color-gray-500: hsl(0deg 0% 50%);
   --color-gray-700: hsl(0deg 0% 75%);
   --color-gray-900: hsl(0deg 0% 90%);
+  --color-chelsea-blue: #034694;
 }
 
 /*
   Custom styles
 */
 body {
-  font-family: sans-serif;
+  font-family: "Raleway", sans-serif;
+  background-color: var(--color-chelsea-blue);
 }
 
 @media (max-height: 600px) {
@@ -46,14 +48,14 @@ button {
   min-height: 100%;
 }
 
-header {
+header, footer{
   display: flex;
   height: var(--header-height);
   border-bottom: 1px solid var(--color-gray-700);
   color: var(--color-gray-300);
 }
 
-header .side {
+header .side , footer{
   width: var(--header-height);
   display: grid;
   place-content: center;
@@ -149,6 +151,7 @@ h1 {
 
 .guess-input-wrapper label {
   font-size: 1.25rem;
+  color: white;
 }
 
 .guess-input-wrapper input {
@@ -246,7 +249,6 @@ h1 {
   gap: 4px;
 }
 
-
 .keyboard .letter {
   width: 2rem;
   height: 2rem;
@@ -269,4 +271,17 @@ h1 {
 .keyboard .letter.misplaced {
   background: var(--color-warning);
   color: white;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px;
+  background: var(--color-chelsea-blue);
+  color: white;
+}
+
+Footer {
+  color: white
 }

@@ -84,6 +84,9 @@ export const WORDS = [
   'GOALS',
   'PLAYS',
   'TEAMY',
-  'STAMF'
+  'STAMF',
+  'FIELD',
+  'CHELS',
+  'SHOTS'
 ];
 
